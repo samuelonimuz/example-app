@@ -8,7 +8,7 @@ Deze repo wordt **niet rechtstreeks** gedeployed; ArgoCD pickt hem op via een
 
 ## Structuur
 
-```
+```text
 base/                       # gemeenschappelijke manifests voor alle clusters
   deployment.yaml
   service.yaml

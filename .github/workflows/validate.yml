@@ -16,8 +16,7 @@ jobs:
           python-version: "3.x"
       - run: pip install yamllint
       - run: |
-          yamllint --strict \
-            -d '{extends: default, rules: {line-length: disable}}' .
+          yamllint --strict -d '{extends: default, rules: {line-length: disable, truthy: {check-keys: false}}}' .
 
   markdownlint:
     runs-on: ubuntu-latest
